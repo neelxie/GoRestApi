@@ -18,3 +18,5 @@ func handleRequest(){
 func main(){
 	handleRequests()
 }
+
+// to run type go run and the file name which is main.go
