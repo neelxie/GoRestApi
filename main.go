@@ -4,8 +4,10 @@ import {
 	"fmt"
 	"log"
 	"net/http"
+	"encoding/json"
 }
 
+}
 func homePage(w htttp.ResponseWriter, r *http.Request){
 	fmt.Fprintf(w, "Neelxie my first endpoint")
 }
