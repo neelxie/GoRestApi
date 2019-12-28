@@ -32,8 +32,8 @@ func aboutPage(w htttp.ResponseWriter, r *http.Request){
 
 
 func handleRequest(){
-	http.HandleFunc("/", homePage)
-
+	http.handleFunc("/", homepage)
+	http.handleFunc("/allarticles", allArticles)
 	log.Fatal(http.ListenAndServe(":8081", nil))
 }
 
