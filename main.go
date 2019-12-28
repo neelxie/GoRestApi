@@ -14,7 +14,14 @@ type Article struct{
 }
 type Articles []Article
 
+func allArticles(w htttp.ResponseWriter, r *http.Request){
+	articles := Articles{
+		Articles{Title:"Test Title", Desc: "Test Description", Content: "Test Content"},
+	}
 
+	fmt.Println("Endpoint Hits All artcles endpoint")
+	json.NewEncoder(w).Encode(articles)
+}
 func homePage(w htttp.ResponseWriter, r *http.Request){
 	fmt.Fprintf(w, "Neelxie my first endpoint")
 }
