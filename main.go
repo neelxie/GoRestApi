@@ -7,7 +7,14 @@ import {
 	"encoding/json"
 }
 
+type Article struct{
+	Title string `json:"Title"`
+	Desc string `json:"desc"`
+	Content string `json:"content"`
 }
+type Articles []Article
+
+
 func homePage(w htttp.ResponseWriter, r *http.Request){
 	fmt.Fprintf(w, "Neelxie my first endpoint")
 }
