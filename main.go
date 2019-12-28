@@ -33,11 +33,11 @@ func aboutPage(w htttp.ResponseWriter, r *http.Request){
 
 func handleRequest(){
 	http.HandleFunc("/", homePage)
+
 	log.Fatal(http.ListenAndServe(":8081", nil))
 }
 
 func main(){
-	handleRequests()
-}
-
 // to run type go run and the file name which is main.go
+	handleRequest()
+}
