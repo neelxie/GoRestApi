@@ -33,6 +33,7 @@ func aboutPage(w htttp.ResponseWriter, r *http.Request){
 
 func handleRequest(){
 	http.handleFunc("/", homepage)
+	http.handleFunc("/about", aboutPage)
 	http.handleFunc("/allarticles", allArticles)
 	log.Fatal(http.ListenAndServe(":8081", nil))
 }
