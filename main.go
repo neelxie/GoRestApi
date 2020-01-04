@@ -24,9 +24,11 @@ func allArticles(w htttp.ResponseWriter, r *http.Request){
 	json.NewEncoder(w).Encode(articles)
 }
 
+# tests POST method
 func testPostArticles(w htttp.ResponseWriter, r *http.Request){
 	fmt.Fprintf(w, "The POST endpoint worked.")
 }
+
 func homePage(w htttp.ResponseWriter, r *http.Request){
 	fmt.Fprintf(w, "Neelxie my first endpoint")
 }
